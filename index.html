@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unique - Group Tours & Adventure Trips</title>
+  <meta name="description" content="Discover incredible travel experiences with Unique. Book group tours to Leh Ladakh, Spiti Valley, Kerala, Andaman, and international destinations. Expert-guided adventures starting from ₹8,000." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== LEAD CAPTURE POPUP ========== -->
+  <div class="popup-overlay" id="leadPopup">
+    <div class="popup-box">
+      <button class="popup-close" id="popupClose"><i class="fas fa-times"></i></button>
+      <div class="popup-left">
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&q=80" alt="Adventure Travel" />
+        <div class="popup-left-overlay">
+          <h3>Your Dream Trip Awaits!</h3>
+          <p>Get exclusive deals & expert guidance</p>
+        </div>
+      </div>
+      <div class="popup-right">
+        <div class="popup-logo">
+          <img src="assets/logo.jpg" alt="Unique Travel Agency" class="site-logo" />
+        </div>
+        <h2>Connect With Our Expert</h2>
+        <p>Get personalized travel recommendations & best deals</p>
+        <form class="popup-form" id="leadForm">
+          <div class="form-group">
+            <input type="text" placeholder="Your Full Name" required />
+          </div>
+          <div class="form-group">
+            <input type="tel" placeholder="WhatsApp Number" required />
+          </div>
+          <div class="form-group">
+            <select>
+              <option value="">Select Destination</option>
+              <option>Leh Ladakh</option>
+              <option>Spiti Valley</option>
+              <option>Kashmir</option>
+              <option>Kerala</option>
+              <option>Andaman</option>
+              <option>Bali</option>
+              <option>Vietnam</option>
+              <option>Dubai</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-primary">Get Free Consultation <i class="fas fa-arrow-right"></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.jpg" alt="Unique Travel Agency" class="site-logo" />
+      </a>
+
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item has-dropdown">
+          <a href="#" class="nav-link">International <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-menu">
+            <div class="dropdown-grid">
+              <a href="#" class="dropdown-item"><i class="fas fa-map-marker-alt"></i> Vietnam</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-map-marker-alt"></i> Bhutan</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-map-marker-alt"></i> Sri Lanka</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-map-marker-alt"></i> Singapore</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-map-marker-alt"></i> Dubai</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-map-marker-alt"></i> Bali</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-map-marker-alt"></i> Thailand</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-map-marker-alt"></i> Egypt</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-map-marker-alt"></i> Europe</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-map-marker-alt"></i> Azerbaijan</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item has-dropdown">
+          <a href="#" class="nav-link">Domestic <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-menu">
+            <div class="dropdown-grid">
+              <a href="#" class="dropdown-item"><i class="fas fa-map-marker-alt"></i> Leh Ladakh</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-map-marker-alt"></i> Spiti Valley</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-map-marker-alt"></i> Tawang</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-map-marker-alt"></i> Zanskar Valley</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-map-marker-alt"></i> Meghalaya</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-map-marker-alt"></i> Kerala</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-map-marker-alt"></i> Andaman</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-map-marker-alt"></i> Kashmir</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-map-marker-alt"></i> Sikkim</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-map-marker-alt"></i> Goa</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item has-dropdown">
+          <a href="#" class="nav-link">Group Tours <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-menu">
+            <div class="dropdown-grid">
+              <a href="#" class="dropdown-item"><i class="fas fa-users"></i> Weekend Trips</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-users"></i> College Groups</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-users"></i> Corporate Tours</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-users"></i> Family Packages</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-users"></i> Honeymoon Special</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-users"></i> Adventure Groups</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item"><a href="vehicles.html" class="nav-link"><i class="fas fa-car"></i> Our Fleet</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
+      </ul>
+
+      <a href="tel:+918600313495" class="nav-cta">
+        <i class="fas fa-phone-alt"></i>
+        <span>+91 8600313495</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-slider" id="heroSlider">
+      <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=90')"></div>
+      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1920&q=90')"></div>
+      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1920&q=90')"></div>
+      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1920&q=90')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <div class="hero-badge"><i class="fas fa-star"></i> #1 Rated Adventure Tour Company</div>
+      <h1 class="hero-title">Your Next Adventure<br /><span class="text-accent">Starts Here..</span></h1>
+      <p class="hero-subtitle">Discover breathtaking destinations, explore with expert-guided group tours, and create memories that last a lifetime</p>
+      <div class="hero-search">
+        <div class="search-box">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search destinations..." id="heroSearch" />
+        </div>
+        <button class="btn-search" onclick="document.getElementById('leadPopup').style.display='flex'">Explore Now</button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <strong>10,000+</strong>
+          <span>Happy Travelers</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <strong>150+</strong>
+          <span>Destinations</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <strong>500+</strong>
+          <span>Trip Packages</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <strong>4.9â˜…</strong>
+          <span>Average Rating</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#ffffff"/>
+      </svg>
+    </div>
+    <div class="slider-dots" id="sliderDots"></div>
+  </section>
+
+  <!-- ========== TRENDING DESTINATIONS (Circles) ========== -->
+  <section class="trending-bar">
+    <div class="container">
+      <div class="trending-header">
+        <h2><i class="fas fa-fire"></i> Trending Destinations</h2>
+        <a href="#" class="whatsapp-float-small">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+      <div class="trending-scroll" id="trendingScroll">
+        <div class="trending-item">
+          <div class="trending-circle">
+            <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=200&q=80" alt="Leh Ladakh" />
+          </div>
+          <span>Leh Ladakh</span>
+        </div>
+        <div class="trending-item">
+          <div class="trending-circle">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=200&q=80" alt="Spiti Valley" />
+          </div>
+          <span>Spiti Valley</span>
+        </div>
+        <div class="trending-item">
+          <div class="trending-circle">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&q=80" alt="Tawang" />
+          </div>
+          <span>Tawang</span>
+        </div>
+        <div class="trending-item">
+          <div class="trending-circle">
+            <img src="https://images.unsplash.com/photo-1519002171953-cf8cadb95060?w=200&q=80" alt="Zanskar Valley" />
+          </div>
+          <span>Zanskar Valley</span>
+        </div>
+        <div class="trending-item">
+          <div class="trending-circle">
+            <img src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=200&q=80" alt="Meghalaya" />
+          </div>
+          <span>Meghalaya</span>
+        </div>
+        <div class="trending-item">
+          <div class="trending-circle">
+            <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=200&q=80" alt="Kerala" />
+          </div>
+          <span>Kerala</span>
+        </div>
+        <div class="trending-item">
+          <div class="trending-circle">
+            <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=200&q=80" alt="Andaman" />
+          </div>
+          <span>Andaman</span>
+        </div>
+        <div class="trending-item">
+          <div class="trending-circle">
+            <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=200&q=80" alt="Kashmir" />
+          </div>
+          <span>Kashmir</span>
+        </div>
+        <div class="trending-item">
+          <div class="trending-circle">
+            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=200&q=80" alt="Bali" />
+          </div>
+          <span>Bali</span>
+        </div>
+        <div class="trending-item">
+          <div class="trending-circle">
+            <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=200&q=80" alt="Dubai" />
+          </div>
+          <span>Dubai</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== UPCOMING TRIPS ========== -->
+  <section class="trips-section" id="upcoming">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Upcoming Trips <span class="accent-tag" id="currentMonth">Apr '26</span></h2>
+          <p class="section-subtitle">Handpicked adventures departing this month</p>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn prev" id="upcomingPrev"><i class="fas fa-chevron-left"></i></button>
+          <button class="carousel-btn next" id="upcomingNext"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+      <div class="cards-carousel" id="upcomingCarousel">
+        <!-- Cards -->
+        <div class="tour-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&q=80" alt="Spiti Valley Bike Trip" />
+            <div class="card-badge"><i class="fas fa-map-marker-alt"></i> Spiti Valley</div>
+            <div class="card-duration">6N/7D</div>
+            <div class="card-overlay">
+              <button class="btn-book" onclick="document.getElementById('leadPopup').style.display='flex'">Book Now</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Spiti Bike Trip 10 Days</h3>
+            <p class="card-itinerary"><i class="fas fa-route"></i> 2N Volvo â€¢ 1N Manali â€¢ 1N Rampur â€¢ More</p>
+            <div class="card-footer">
+              <div class="card-rating">
+                <div class="stars">â˜…â˜…â˜…â˜…â˜…</div>
+                <span>4.9 (1815)</span>
+              </div>
+              <div class="card-price">
+                <small>From</small>
+                <strong>â‚¹21,000</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tour-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=500&q=80" alt="Leh Ladakh Trip" />
+            <div class="card-badge"><i class="fas fa-map-marker-alt"></i> Leh Ladakh</div>
+            <div class="card-duration">7N/8D</div>
+            <div class="card-overlay">
+              <button class="btn-book" onclick="document.getElementById('leadPopup').style.display='flex'">Book Now</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Leh Ladakh Adventure Tour</h3>
+            <p class="card-itinerary"><i class="fas fa-route"></i> 1N Delhi â€¢ 2N Leh â€¢ 2N Pangong â€¢ More</p>
+            <div class="card-footer">
+              <div class="card-rating">
+                <div class="stars">â˜…â˜…â˜…â˜…â˜…</div>
+                <span>4.8 (2341)</span>
+              </div>
+              <div class="card-price">
+                <small>From</small>
+                <strong>â‚¹28,000</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tour-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=500&q=80" alt="Kerala Tour" />
+            <div class="card-badge"><i class="fas fa-map-marker-alt"></i> Kerala</div>
+            <div class="card-duration">5N/6D</div>
+            <div class="card-overlay">
+              <button class="btn-book" onclick="document.getElementById('leadPopup').style.display='flex'">Book Now</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Kerala Backwaters Escape</h3>
+            <p class="card-itinerary"><i class="fas fa-route"></i> 1N Kochi â€¢ 2N Munnar â€¢ 2N Alleppey</p>
+            <div class="card-footer">
+              <div class="card-rating">
+                <div class="stars">â˜…â˜…â˜…â˜…â˜…</div>
+                <span>4.9 (987)</span>
+              </div>
+              <div class="card-price">
+                <small>From</small>
+                <strong>â‚¹16,500</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tour-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=500&q=80" alt="Kashmir Tour" />
+            <div class="card-badge"><i class="fas fa-map-marker-alt"></i> Kashmir</div>
+            <div class="card-duration">5N/6D</div>
+            <div class="card-overlay">
+              <button class="btn-book" onclick="document.getElementById('leadPopup').style.display='flex'">Book Now</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Kashmir Paradise Tour</h3>
+            <p class="card-itinerary"><i class="fas fa-route"></i> 2N Srinagar â€¢ 1N Gulmarg â€¢ 2N Pahalgam</p>
+            <div class="card-footer">
+              <div class="card-rating">
+                <div class="stars">â˜…â˜…â˜…â˜…â˜…</div>
+                <span>4.9 (1567)</span>
+              </div>
+              <div class="card-price">
+                <small>From</small>
+                <strong>â‚¹19,000</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tour-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=500&q=80" alt="Andaman Tour" />
+            <div class="card-badge"><i class="fas fa-map-marker-alt"></i> Andaman</div>
+            <div class="card-duration">5N/6D</div>
+            <div class="card-overlay">
+              <button class="btn-book" onclick="document.getElementById('leadPopup').style.display='flex'">Book Now</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Andaman Island Getaway</h3>
+            <p class="card-itinerary"><i class="fas fa-route"></i> 3N Port Blair â€¢ 1N Havelock â€¢ 1N Neil</p>
+            <div class="card-footer">
+              <div class="card-rating">
+                <div class="stars">â˜…â˜…â˜…â˜…â˜…</div>
+                <span>4.8 (743)</span>
+              </div>
+              <div class="card-price">
+                <small>From</small>
+                <strong>â‚¹22,000</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tour-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&q=80" alt="Bali Tour" />
+            <div class="card-badge"><i class="fas fa-map-marker-alt"></i> Bali</div>
+            <div class="card-duration">6N/7D</div>
+            <div class="card-overlay">
+              <button class="btn-book" onclick="document.getElementById('leadPopup').style.display='flex'">Book Now</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Bali Tropical Adventure</h3>
+            <p class="card-itinerary"><i class="fas fa-route"></i> 2N Ubud â€¢ 2N Seminyak â€¢ 2N Nusa Penida</p>
+            <div class="card-footer">
+              <div class="card-rating">
+                <div class="stars">â˜…â˜…â˜…â˜…â˜…</div>
+                <span>4.9 (2103)</span>
+              </div>
+              <div class="card-price">
+                <small>From</small>
+                <strong>â‚¹45,000</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SPITI VALLEY SECTION ========== -->
+  <section class="trips-section bg-light" id="spiti">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Spiti Valley</h2>
+          <p class="section-subtitle">The land of high passes and ancient monasteries</p>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn prev" id="spitiPrev"><i class="fas fa-chevron-left"></i></button>
+          <button class="carousel-btn next" id="spitiNext"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+      <div class="cards-carousel" id="spitiCarousel">
+        <div class="tour-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&q=80" alt="Spiti Winter" />
+            <div class="card-badge"><i class="fas fa-map-marker-alt"></i> Spiti Valley</div>
+            <div class="card-duration">6N/7D</div>
+            <div class="card-overlay">
+              <button class="btn-book" onclick="document.getElementById('leadPopup').style.display='flex'">Book Now</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Spiti Winter Bike Expedition</h3>
+            <p class="card-itinerary"><i class="fas fa-route"></i> 1N Shimla â€¢ 1N Chitkul â€¢ 1N Kalpa â€¢ More</p>
+            <div class="card-footer">
+              <div class="card-rating">
+                <div class="stars">â˜…â˜…â˜…â˜…â˜…</div>
+                <span>4.9 (1242)</span>
+              </div>
+              <div class="card-price">
+                <small>From</small>
+                <strong>â‚¹16,000</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tour-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1519002171953-cf8cadb95060?w=500&q=80" alt="Spiti Road Trip" />
+            <div class="card-badge"><i class="fas fa-map-marker-alt"></i> Spiti Valley</div>
+            <div class="card-duration">7N/8D</div>
+            <div class="card-overlay">
+              <button class="btn-book" onclick="document.getElementById('leadPopup').style.display='flex'">Book Now</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Spiti Road Trip 7 Days</h3>
+            <p class="card-itinerary"><i class="fas fa-route"></i> 2N Volvo â€¢ 1N Manali â€¢ 2N Kaza â€¢ More</p>
+            <div class="card-footer">
+              <div class="card-rating">
+                <div class="stars">â˜…â˜…â˜…â˜…â˜†</div>
+                <span>4.7 (723)</span>
+              </div>
+              <div class="card-price">
+                <small>From</small>
+                <strong>â‚¹13,000</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tour-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=500&q=80" alt="Spiti Complete" />
+            <div class="card-badge"><i class="fas fa-map-marker-alt"></i> Spiti Valley</div>
+            <div class="card-duration">9N/10D</div>
+            <div class="card-overlay">
+              <button class="btn-book" onclick="document.getElementById('leadPopup').style.display='flex'">Book Now</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Complete Spiti Circuit Tour</h3>
+            <p class="card-itinerary"><i class="fas fa-route"></i> 1N Shimla â€¢ 2N Kaza â€¢ 1N Chandratal â€¢ More</p>
+            <div class="card-footer">
+              <div class="card-rating">
+                <div class="stars">â˜…â˜…â˜…â˜…â˜…</div>
+                <span>4.9 (892)</span>
+              </div>
+              <div class="card-price">
+                <small>From</small>
+                <strong>â‚¹24,000</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== INTERNATIONAL SECTION ========== -->
+  <section class="trips-section" id="international">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">International Tours</h2>
+          <p class="section-subtitle">Explore the world with our curated packages</p>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn prev" id="intlPrev"><i class="fas fa-chevron-left"></i></button>
+          <button class="carousel-btn next" id="intlNext"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+      <div class="cards-carousel" id="intlCarousel">
+        <div class="tour-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=500&q=80" alt="Dubai" />
+            <div class="card-badge"><i class="fas fa-map-marker-alt"></i> Dubai</div>
+            <div class="card-duration">5N/6D</div>
+            <div class="card-overlay">
+              <button class="btn-book" onclick="document.getElementById('leadPopup').style.display='flex'">Book Now</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Dubai Luxury Experience</h3>
+            <p class="card-itinerary"><i class="fas fa-route"></i> 2N Dubai City â€¢ 1N Desert Camp â€¢ 2N Marina</p>
+            <div class="card-footer">
+              <div class="card-rating">
+                <div class="stars">â˜…â˜…â˜…â˜…â˜…</div>
+                <span>4.9 (3241)</span>
+              </div>
+              <div class="card-price">
+                <small>From</small>
+                <strong>â‚¹65,000</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tour-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=500&q=80" alt="Bali" />
+            <div class="card-badge"><i class="fas fa-map-marker-alt"></i> Vietnam</div>
+            <div class="card-duration">7N/8D</div>
+            <div class="card-overlay">
+              <button class="btn-book" onclick="document.getElementById('leadPopup').style.display='flex'">Book Now</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Vietnam Discovery Tour</h3>
+            <p class="card-itinerary"><i class="fas fa-route"></i> 2N Hanoi â€¢ 2N Ha Long Bay â€¢ 2N Ho Chi Minh</p>
+            <div class="card-footer">
+              <div class="card-rating">
+                <div class="stars">â˜…â˜…â˜…â˜…â˜…</div>
+                <span>4.8 (1892)</span>
+              </div>
+              <div class="card-price">
+                <small>From</small>
+                <strong>â‚¹55,000</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tour-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80" alt="Bhutan" />
+            <div class="card-badge"><i class="fas fa-map-marker-alt"></i> Bhutan</div>
+            <div class="card-duration">6N/7D</div>
+            <div class="card-overlay">
+              <button class="btn-book" onclick="document.getElementById('leadPopup').style.display='flex'">Book Now</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Bhutan Happiness Tour</h3>
+            <p class="card-itinerary"><i class="fas fa-route"></i> 2N Thimphu â€¢ 2N Punakha â€¢ 2N Paro</p>
+            <div class="card-footer">
+              <div class="card-rating">
+                <div class="stars">â˜…â˜…â˜…â˜…â˜…</div>
+                <span>4.9 (1124)</span>
+              </div>
+              <div class="card-price">
+                <small>From</small>
+                <strong>â‚¹48,000</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY CHOOSE US ========== -->
+  <section class="why-us" id="about">
+    <div class="container">
+      <div class="why-us-grid">
+        <div class="why-us-content">
+          <span class="section-label">Why Choose Us</span>
+          <h2>We Make Your Travel<br /><span class="text-accent">Dreams Come True</span></h2>
+          <p>With over 8 years of experience in adventure and group travel, we have helped thousands of travelers explore the most breathtaking destinations across India and the world. Our passionate team of travel experts ensures every trip is safe, comfortable, and unforgettable.</p>
+          <div class="features-list">
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+              <div>
+                <h4>100% Safe Travel</h4>
+                <p>Certified guides & emergency support at every destination</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fas fa-tag"></i></div>
+              <div>
+                <h4>Best Price Guarantee</h4>
+                <p>We match any price or give you a full refund</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fas fa-headset"></i></div>
+              <div>
+                <h4>24/7 Support</h4>
+                <p>Our team is available round the clock for any assistance</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fas fa-users"></i></div>
+              <div>
+                <h4>Group Specialists</h4>
+                <p>Experts in organizing seamless group travel experiences</p>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn-primary" onclick="document.getElementById('leadPopup').style.display='flex'; return false;">Plan My Trip <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="why-us-images">
+          <div class="image-collage">
+            <div class="collage-main">
+              <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&q=80" alt="Adventure Travel" />
+            </div>
+            <div class="collage-small">
+              <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=300&q=80" alt="Group Travel" />
+              <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=300&q=80" alt="Mountain Trek" />
+            </div>
+            <div class="years-badge">
+              <strong>8+</strong>
+              <span>Years of Adventure</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="testimonials bg-light">
+    <div class="container">
+      <div class="section-center">
+        <span class="section-label">Traveler Reviews</span>
+        <h2>What Our <span class="text-accent">Travelers Say</span></h2>
+        <p>Real experiences from real adventurers</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">â˜…â˜…â˜…â˜…â˜…</div>
+          <p>"The Spiti Valley bike trip was an absolute dream! Everything was perfectly organized - the accommodations, the routes, the guide. Can't wait for my next trip with Unique!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg, #FA8B02, #ff6b35);">R</div>
+            <div>
+              <strong>Rahul Sharma</strong>
+              <span>Mumbai â€¢ Spiti Valley Trip</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card featured">
+          <div class="testimonial-stars">â˜…â˜…â˜…â˜…â˜…</div>
+          <p>"Traveled to Ladakh with a group of 20 friends and it was phenomenal! The team handled everything from permits to accommodations. Truly the best travel experience of my life!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg, #004671, #0077be);">P</div>
+            <div>
+              <strong>Priya Mehta</strong>
+              <span>Pune â€¢ Leh Ladakh Tour</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">â˜…â˜…â˜…â˜…â˜…</div>
+          <p>"Our family trip to Kerala was beyond expectations. The houseboat experience, the food, the cultural activities - all perfectly curated. Highly recommend Unique!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg, #28a745, #20c997);">A</div>
+            <div>
+              <strong>Ankit Patel</strong>
+              <span>Ahmedabad â€¢ Kerala Trip</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT BANNER ========== -->
+  <section class="contact-banner" id="contact">
+    <div class="contact-banner-bg" style="background-image: url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1920&q=80')"></div>
+    <div class="contact-banner-overlay"></div>
+    <div class="container contact-banner-content">
+      <h2>Ready to Start Your Adventure?</h2>
+      <p>Talk to our travel experts and get a custom itinerary designed just for you</p>
+      <div class="contact-actions">
+        <a href="tel:+918600313495" class="btn-primary"><i class="fas fa-phone-alt"></i> Call Us Now</a>
+        <a href="https://wa.me/918600313495" class="btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-speak">
+      <div class="container">
+        <div class="speak-row">
+          <a href="#"><i class="fas fa-map-marker-alt"></i> Find Us</a>
+          <div class="speak-center">
+            <i class="fas fa-headset"></i>
+            <span>Speak to our expert at <a href="tel:+918600313495">+91 8600313495</a></span>
+          </div>
+          <div class="follow-us">
+            <span>Follow Us</span>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/918600313495" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <img src="assets/logo.jpg" alt="Unique Travel Agency" class="site-logo" />
+            </div>
+            <p>Crafting unforgettable travel experiences since 2018. Your trusted partner for group tours and adventure travel across India and the world.</p>
+            <div class="footer-contact">
+              <p><i class="fas fa-map-marker-alt"></i> Mahesh Reddy, Pune,<br>&nbsp;&nbsp;&nbsp;&nbsp; Maharashtra - 411001, INDIA</p>
+              <p><i class="fas fa-envelope"></i> hello@unique.com</p>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Cancellation Terms</a></li>
+              <li><a href="#">Disclaimer</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="footer-newsletter">
+            <h4>Newsletter</h4>
+            <p>Subscribe to get exclusive deals and travel tips</p>
+            <form class="newsletter-form" id="newsletterForm">
+              <input type="email" placeholder="Your email address" required />
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>Website built with â¤ï¸ by Unique | Â© 2026 All rights reserved by Unique OPC Pvt. Ltd.</p>
+          <div class="payment-icons">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/200px-Visa_Inc._logo.svg.png" alt="Visa" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/200px-Mastercard-logo.svg.png" alt="Mastercard" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/200px-PayPal.svg.png" alt="PayPal" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== FLOATING WHATSAPP ========== -->
+  <a href="https://wa.me/918600313495" class="whatsapp-float" target="_blank" id="whatsappFloat">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Chat with us!</span>
+  </a>
+
+  <!-- ========== SCROLL TO TOP ========== -->
+  <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

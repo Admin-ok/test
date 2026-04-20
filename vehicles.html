@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Fleet - Available Vehicles | Unique</title>
+  <meta name="description" content="Explore our wide range of vehicles available for group tours and travel. From 4-seater sedans to 45-seater luxury buses, we have the perfect ride for every trip." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="vehicles.css" />
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header scrolled" id="header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.jpg" alt="Unique Travel Agency" class="site-logo" />
+      </a>
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item has-dropdown">
+          <a href="index.html" class="nav-link">International <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-menu">
+            <div class="dropdown-grid">
+              <a href="#" class="dropdown-item"><i class="fas fa-map-marker-alt"></i> Vietnam</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-map-marker-alt"></i> Bhutan</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-map-marker-alt"></i> Sri Lanka</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-map-marker-alt"></i> Dubai</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-map-marker-alt"></i> Bali</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-map-marker-alt"></i> Thailand</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item has-dropdown">
+          <a href="index.html" class="nav-link">Domestic <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-menu">
+            <div class="dropdown-grid">
+              <a href="#" class="dropdown-item"><i class="fas fa-map-marker-alt"></i> Leh Ladakh</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-map-marker-alt"></i> Spiti Valley</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-map-marker-alt"></i> Kerala</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-map-marker-alt"></i> Kashmir</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-map-marker-alt"></i> Andaman</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-map-marker-alt"></i> Goa</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item has-dropdown">
+          <a href="index.html" class="nav-link">Group Tours <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-menu">
+            <div class="dropdown-grid">
+              <a href="#" class="dropdown-item"><i class="fas fa-users"></i> Weekend Trips</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-users"></i> Corporate Tours</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-users"></i> Family Packages</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-users"></i> Honeymoon Special</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item"><a href="vehicles.html" class="nav-link active-link"><i class="fas fa-car"></i> Our Fleet</a></li>
+        <li class="nav-item"><a href="index.html#about" class="nav-link">About Us</a></li>
+        <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact Us</a></li>
+      </ul>
+      <a href="tel:+918600313495" class="nav-cta">
+        <i class="fas fa-phone-alt"></i>
+        <span>+91 8600313495</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- ========== PAGE HERO BANNER ========== -->
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1449965408869-ebd3fee6d445?w=1920&q=85')"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content container">
+      <div class="hero-badge"><i class="fas fa-car-side"></i> Wide Range of Vehicles</div>
+      <h1>Our Fleet</h1>
+      <p>Choose from our premium collection of vehicles for every group size and travel need</p>
+      <div class="breadcrumb">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <i class="fas fa-chevron-right"></i>
+        <span>Available Vehicles</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FILTER TABS ========== -->
+  <section class="filter-section">
+    <div class="container">
+      <div class="filter-tabs" id="filterTabs">
+        <button class="filter-tab active" data-filter="all"><i class="fas fa-th-large"></i> All Vehicles</button>
+        <button class="filter-tab" data-filter="4"><i class="fas fa-car"></i> 4 Seater</button>
+        <button class="filter-tab" data-filter="5"><i class="fas fa-car-side"></i> 5 Seater</button>
+        <button class="filter-tab" data-filter="7"><i class="fas fa-shuttle-van"></i> 7 Seater</button>
+        <button class="filter-tab" data-filter="8"><i class="fas fa-shuttle-van"></i> 8 Seater</button>
+        <button class="filter-tab" data-filter="12"><i class="fas fa-van-shuttle"></i> 12 Seater</button>
+        <button class="filter-tab" data-filter="17"><i class="fas fa-bus"></i> 17 Seater</button>
+        <button class="filter-tab" data-filter="20"><i class="fas fa-bus"></i> 20+ Seater</button>
+        <button class="filter-tab" data-filter="35"><i class="fas fa-bus-alt"></i> 35+ Seater</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== VEHICLES GRID ========== -->
+  <section class="vehicles-section">
+    <div class="container">
+
+      <!-- â”€â”€â”€ 4 SEATER CATEGORY â”€â”€â”€ -->
+      <div class="category-block" id="cat-4">
+        <div class="category-header">
+          <div class="category-icon"><i class="fas fa-car"></i></div>
+          <div>
+            <h2>4 Seater Vehicles</h2>
+            <p>Perfect for couples & small family trips</p>
+          </div>
+          <span class="seat-badge">4 Seats</span>
+        </div>
+        <div class="vehicles-grid">
+
+          <div class="vehicle-card" data-seats="4">
+            <div class="vehicle-image">
+              <img src="assets/cars/dzire.jpg" alt="Maruti Suzuki Swift Dzire" />
+              <div class="vehicle-type-badge">Sedan</div>
+              <div class="vehicle-seats-badge"><i class="fas fa-user-friends"></i> 4</div>
+            </div>
+            <div class="vehicle-info">
+              <h3>Maruti Suzuki Swift Dzire</h3>
+              <div class="vehicle-specs">
+                <span><i class="fas fa-gas-pump"></i> Petrol/CNG</span>
+                <span><i class="fas fa-cog"></i> Manual/Auto</span>
+                <span><i class="fas fa-snowflake"></i> AC</span>
+              </div>
+              <div class="vehicle-features">
+                <span>✓ Comfortable Sedan</span>
+                <span>✓ Fuel Efficient</span>
+                <span>✓ Spacious Boot</span>
+              </div>
+              <div class="vehicle-footer">
+                <div class="vehicle-price">
+                  <small>Starting from</small>
+                  <strong>₹11/km</strong>
+                </div>
+                <button class="btn-enquiry" onclick="openEnquiry('Maruti Suzuki Swift Dzire')">
+                  <i class="fab fa-whatsapp"></i> Enquire
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="vehicle-card" data-seats="4">
+            <div class="vehicle-image">
+              <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Hyundai/Aura/10892/1674457788523/front-left-side-47.jpg" alt="Hyundai Aura" />
+              <div class="vehicle-type-badge">Sedan</div>
+              <div class="vehicle-seats-badge"><i class="fas fa-user-friends"></i> 4</div>
+            </div>
+            <div class="vehicle-info">
+              <h3>Hyundai Aura</h3>
+              <div class="vehicle-specs">
+                <span><i class="fas fa-gas-pump"></i> Petrol/CNG</span>
+                <span><i class="fas fa-cog"></i> Manual</span>
+                <span><i class="fas fa-snowflake"></i> AC</span>
+              </div>
+              <div class="vehicle-features">
+                <span>âœ“ Stylish Design</span>
+                <span>âœ“ Premium Interior</span>
+                <span>âœ“ Great Mileage</span>
+              </div>
+              <div class="vehicle-footer">
+                <div class="vehicle-price">
+                  <small>Starting from</small>
+                  <strong>â‚¹11/km</strong>
+                </div>
+                <button class="btn-enquiry" onclick="openEnquiry('Hyundai Aura')">
+                  <i class="fab fa-whatsapp"></i> Enquire
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="vehicle-card" data-seats="4">
+            <div class="vehicle-image">
+              <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Honda/Aura/10892/1674457788523/front-left-side-47.jpg" alt="Honda Amaze" />
+              <div class="vehicle-type-badge">Sedan</div>
+              <div class="vehicle-seats-badge"><i class="fas fa-user-friends"></i> 4</div>
+            </div>
+            <div class="vehicle-info">
+              <h3>Honda Amaze</h3>
+              <div class="vehicle-specs">
+                <span><i class="fas fa-gas-pump"></i> Petrol/Diesel</span>
+                <span><i class="fas fa-cog"></i> Manual/CVT</span>
+                <span><i class="fas fa-snowflake"></i> AC</span>
+              </div>
+              <div class="vehicle-features">
+                <span>âœ“ Honda Reliability</span>
+                <span>âœ“ Smooth CVT</span>
+                <span>âœ“ Comfortable Ride</span>
+              </div>
+              <div class="vehicle-footer">
+                <div class="vehicle-price">
+                  <small>Starting from</small>
+                  <strong>â‚¹12/km</strong>
+                </div>
+                <button class="btn-enquiry" onclick="openEnquiry('Honda Amaze')">
+                  <i class="fab fa-whatsapp"></i> Enquire
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- â”€â”€â”€ 5 SEATER CATEGORY â”€â”€â”€ -->
+      <div class="category-block" id="cat-5">
+        <div class="category-header">
+          <div class="category-icon"><i class="fas fa-car-side"></i></div>
+          <div>
+            <h2>5 Seater Vehicles</h2>
+            <p>Ideal for family outings & city transfers</p>
+          </div>
+          <span class="seat-badge">5 Seats</span>
+        </div>
+        <div class="vehicles-grid">
+
+          <div class="vehicle-card" data-seats="5">
+            <div class="vehicle-image">
+              <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Maruti/Ertiga/10293/1715065360699/front-left-side-47.jpg" alt="Maruti Suzuki Ertiga" />
+              <div class="vehicle-type-badge">MPV</div>
+              <div class="vehicle-seats-badge"><i class="fas fa-user-friends"></i> 5</div>
+            </div>
+            <div class="vehicle-info">
+              <h3>Maruti Suzuki Ertiga</h3>
+              <div class="vehicle-specs">
+                <span><i class="fas fa-gas-pump"></i> Petrol/CNG</span>
+                <span><i class="fas fa-cog"></i> Manual/Auto</span>
+                <span><i class="fas fa-snowflake"></i> AC</span>
+              </div>
+              <div class="vehicle-features">
+                <span>âœ“ Spacious MPV</span>
+                <span>âœ“ Family Friendly</span>
+                <span>âœ“ Fuel Efficient</span>
+              </div>
+              <div class="vehicle-footer">
+                <div class="vehicle-price">
+                  <small>Starting from</small>
+                  <strong>â‚¹13/km</strong>
+                </div>
+                <button class="btn-enquiry" onclick="openEnquiry('Maruti Suzuki Ertiga')">
+                  <i class="fab fa-whatsapp"></i> Enquire
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="vehicle-card" data-seats="5">
+            <div class="vehicle-image">
+              <img src="assets/cars/creta.jpg" alt="Hyundai Creta" />
+              <div class="vehicle-type-badge">SUV</div>
+              <div class="vehicle-seats-badge"><i class="fas fa-user-friends"></i> 5</div>
+            </div>
+            <div class="vehicle-info">
+              <h3>Hyundai Creta</h3>
+              <div class="vehicle-specs">
+                <span><i class="fas fa-gas-pump"></i> Petrol/Diesel</span>
+                <span><i class="fas fa-cog"></i> Manual/Auto</span>
+                <span><i class="fas fa-snowflake"></i> AC</span>
+              </div>
+              <div class="vehicle-features">
+                <span>✓ Premium SUV</span>
+                <span>✓ Sunroof Available</span>
+                <span>✓ Smooth Drive</span>
+              </div>
+              <div class="vehicle-footer">
+                <div class="vehicle-price">
+                  <small>Starting from</small>
+                  <strong>₹14/km</strong>
+                </div>
+                <button class="btn-enquiry" onclick="openEnquiry('Hyundai Creta')">
+                  <i class="fab fa-whatsapp"></i> Enquire
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="vehicle-card" data-seats="5">
+            <div class="vehicle-image">
+              <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Kia/Seltos/10565/1689327891361/front-left-side-47.jpg" alt="Kia Seltos" />
+              <div class="vehicle-type-badge">SUV</div>
+              <div class="vehicle-seats-badge"><i class="fas fa-user-friends"></i> 5</div>
+            </div>
+            <div class="vehicle-info">
+              <h3>Kia Seltos</h3>
+              <div class="vehicle-specs">
+                <span><i class="fas fa-gas-pump"></i> Petrol/Diesel</span>
+                <span><i class="fas fa-cog"></i> Manual/Auto</span>
+                <span><i class="fas fa-snowflake"></i> AC</span>
+              </div>
+              <div class="vehicle-features">
+                <span>âœ“ Connected Car</span>
+                <span>âœ“ Ventilated Seats</span>
+                <span>âœ“ ADAS Features</span>
+              </div>
+              <div class="vehicle-footer">
+                <div class="vehicle-price">
+                  <small>Starting from</small>
+                  <strong>â‚¹14/km</strong>
+                </div>
+                <button class="btn-enquiry" onclick="openEnquiry('Kia Seltos')">
+                  <i class="fab fa-whatsapp"></i> Enquire
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- â”€â”€â”€ 7 SEATER CATEGORY â”€â”€â”€ -->
+      <div class="category-block" id="cat-7">
+        <div class="category-header">
+          <div class="category-icon"><i class="fas fa-shuttle-van"></i></div>
+          <div>
+            <h2>7 Seater Vehicles</h2>
+            <p>Best for large families & group friends trips</p>
+          </div>
+          <span class="seat-badge">7 Seats</span>
+        </div>
+        <div class="vehicles-grid">
+
+          <div class="vehicle-card" data-seats="7">
+            <div class="vehicle-image">
+              <img src="assets/cars/crysta.jpg" alt="Toyota Innova Crysta" />
+              <div class="vehicle-type-badge">MPV</div>
+              <div class="vehicle-seats-badge"><i class="fas fa-user-friends"></i> 7</div>
+            </div>
+            <div class="vehicle-info">
+              <h3>Toyota Innova Crysta</h3>
+              <div class="vehicle-specs">
+                <span><i class="fas fa-gas-pump"></i> Diesel</span>
+                <span><i class="fas fa-cog"></i> Manual/Auto</span>
+                <span><i class="fas fa-snowflake"></i> AC</span>
+              </div>
+              <div class="vehicle-features">
+                <span>✓ Captain Seats</span>
+                <span>✓ Premium Comfort</span>
+                <span>✓ Best in Class</span>
+              </div>
+              <div class="vehicle-footer">
+                <div class="vehicle-price">
+                  <small>Starting from</small>
+                  <strong>₹16/km</strong>
+                </div>
+                <button class="btn-enquiry" onclick="openEnquiry('Toyota Innova Crysta')">
+                  <i class="fab fa-whatsapp"></i> Enquire
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="vehicle-card" data-seats="7">
+            <div class="vehicle-image">
+              <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Toyota/Innova-Hycross/11559/1703664724209/front-left-side-47.jpg" alt="Toyota Innova Hycross" />
+              <div class="vehicle-type-badge">MPV</div>
+              <div class="vehicle-seats-badge"><i class="fas fa-user-friends"></i> 7</div>
+            </div>
+            <div class="vehicle-info">
+              <h3>Toyota Innova Hycross</h3>
+              <div class="vehicle-specs">
+                <span><i class="fas fa-gas-pump"></i> Hybrid</span>
+                <span><i class="fas fa-cog"></i> e-CVT</span>
+                <span><i class="fas fa-snowflake"></i> AC</span>
+              </div>
+              <div class="vehicle-features">
+                <span>âœ“ Hybrid Technology</span>
+                <span>âœ“ Panoramic Roof</span>
+                <span>âœ“ Ottoman Seats</span>
+              </div>
+              <div class="vehicle-footer">
+                <div class="vehicle-price">
+                  <small>Starting from</small>
+                  <strong>â‚¹18/km</strong>
+                </div>
+                <button class="btn-enquiry" onclick="openEnquiry('Toyota Innova Hycross')">
+                  <i class="fab fa-whatsapp"></i> Enquire
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="vehicle-card" data-seats="7">
+            <div class="vehicle-image">
+              <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Mahindra/XUV700/8559/1682604618712/front-left-side-47.jpg" alt="Mahindra XUV700" />
+              <div class="vehicle-type-badge">SUV</div>
+              <div class="vehicle-seats-badge"><i class="fas fa-user-friends"></i> 7</div>
+            </div>
+            <div class="vehicle-info">
+              <h3>Mahindra XUV700</h3>
+              <div class="vehicle-specs">
+                <span><i class="fas fa-gas-pump"></i> Petrol/Diesel</span>
+                <span><i class="fas fa-cog"></i> Manual/Auto</span>
+                <span><i class="fas fa-snowflake"></i> AC</span>
+              </div>
+              <div class="vehicle-features">
+                <span>âœ“ ADAS Safety</span>
+                <span>âœ“ Large Sunroof</span>
+                <span>âœ“ Powerful Engine</span>
+              </div>
+              <div class="vehicle-footer">
+                <div class="vehicle-price">
+                  <small>Starting from</small>
+                  <strong>â‚¹15/km</strong>
+                </div>
+                <button class="btn-enquiry" onclick="openEnquiry('Mahindra XUV700')">
+                  <i class="fab fa-whatsapp"></i> Enquire
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- â”€â”€â”€ 8 SEATER CATEGORY â”€â”€â”€ -->
+      <div class="category-block" id="cat-8">
+        <div class="category-header">
+          <div class="category-icon"><i class="fas fa-shuttle-van"></i></div>
+          <div>
+            <h2>8 Seater Vehicles</h2>
+            <p>Perfect for extended family & medium groups</p>
+          </div>
+          <span class="seat-badge">8 Seats</span>
+        </div>
+        <div class="vehicles-grid">
+
+          <div class="vehicle-card" data-seats="8">
+            <div class="vehicle-image">
+              <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Maruti/XL6/11099/1705649987814/front-left-side-47.jpg" alt="Maruti Suzuki XL6" />
+              <div class="vehicle-type-badge">MPV</div>
+              <div class="vehicle-seats-badge"><i class="fas fa-user-friends"></i> 8</div>
+            </div>
+            <div class="vehicle-info">
+              <h3>Maruti Suzuki XL6</h3>
+              <div class="vehicle-specs">
+                <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                <span><i class="fas fa-cog"></i> Manual/Auto</span>
+                <span><i class="fas fa-snowflake"></i> AC</span>
+              </div>
+              <div class="vehicle-features">
+                <span>âœ“ Captain Seats</span>
+                <span>âœ“ Premium MPV</span>
+                <span>âœ“ Spacious Cabin</span>
+              </div>
+              <div class="vehicle-footer">
+                <div class="vehicle-price">
+                  <small>Starting from</small>
+                  <strong>â‚¹14/km</strong>
+                </div>
+                <button class="btn-enquiry" onclick="openEnquiry('Maruti Suzuki XL6')">
+                  <i class="fab fa-whatsapp"></i> Enquire
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="vehicle-card" data-seats="8">
+            <div class="vehicle-image">
+              <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Kia/Carens/11494/1715671569438/front-left-side-47.jpg" alt="Kia Carens" />
+              <div class="vehicle-type-badge">MPV</div>
+              <div class="vehicle-seats-badge"><i class="fas fa-user-friends"></i> 8</div>
+            </div>
+            <div class="vehicle-info">
+              <h3>Kia Carens</h3>
+              <div class="vehicle-specs">
+                <span><i class="fas fa-gas-pump"></i> Petrol/Diesel</span>
+                <span><i class="fas fa-cog"></i> Manual/Auto</span>
+                <span><i class="fas fa-snowflake"></i> AC</span>
+              </div>
+              <div class="vehicle-features">
+                <span>âœ“ Ventilated Seats</span>
+                <span>âœ“ One-touch Sunroof</span>
+                <span>âœ“ Safety Rating 3â˜…</span>
+              </div>
+              <div class="vehicle-footer">
+                <div class="vehicle-price">
+                  <small>Starting from</small>
+                  <strong>â‚¹14/km</strong>
+                </div>
+                <button class="btn-enquiry" onclick="openEnquiry('Kia Carens')">
+                  <i class="fab fa-whatsapp"></i> Enquire
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- â”€â”€â”€ 12 SEATER CATEGORY â”€â”€â”€ -->
+      <div class="category-block" id="cat-12">
+        <div class="category-header">
+          <div class="category-icon"><i class="fas fa-van-shuttle"></i></div>
+          <div>
+            <h2>12 Seater Vehicles</h2>
+            <p>Great for friend groups & medium tours</p>
+          </div>
+          <span class="seat-badge">12 Seats</span>
+        </div>
+        <div class="vehicles-grid">
+
+          <div class="vehicle-card" data-seats="12">
+            <div class="vehicle-image">
+              <img src="https://truckcdn.cardekho.com/in/force/traveller-monobus/force-traveller-monobus.jpg" alt="Force Traveller" />
+              <div class="vehicle-type-badge">Tempo Traveller</div>
+              <div class="vehicle-seats-badge"><i class="fas fa-user-friends"></i> 12</div>
+            </div>
+            <div class="vehicle-info">
+              <h3>Force Tempo Traveller 12S</h3>
+              <div class="vehicle-specs">
+                <span><i class="fas fa-gas-pump"></i> Diesel</span>
+                <span><i class="fas fa-cog"></i> Manual</span>
+                <span><i class="fas fa-snowflake"></i> AC</span>
+              </div>
+              <div class="vehicle-features">
+                <span>âœ“ Pushback Seats</span>
+                <span>âœ“ Music System</span>
+                <span>âœ“ Luggage Carrier</span>
+              </div>
+              <div class="vehicle-footer">
+                <div class="vehicle-price">
+                  <small>Starting from</small>
+                  <strong>â‚¹20/km</strong>
+                </div>
+                <button class="btn-enquiry" onclick="openEnquiry('Tempo Traveller 12 Seater')">
+                  <i class="fab fa-whatsapp"></i> Enquire
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="vehicle-card" data-seats="12">
+            <div class="vehicle-image">
+              <img src="https://truckcdn.cardekho.com/in/force/traveller-monobus/force-traveller-monobus.jpg" alt="Luxury Tempo Traveller" />
+              <div class="vehicle-type-badge">Luxury</div>
+              <div class="vehicle-seats-badge"><i class="fas fa-user-friends"></i> 12</div>
+            </div>
+            <div class="vehicle-info">
+              <h3>Luxury Tempo Traveller 12S</h3>
+              <div class="vehicle-specs">
+                <span><i class="fas fa-gas-pump"></i> Diesel</span>
+                <span><i class="fas fa-cog"></i> Manual</span>
+                <span><i class="fas fa-snowflake"></i> AC</span>
+              </div>
+              <div class="vehicle-features">
+                <span>âœ“ Recliner Seats</span>
+                <span>âœ“ LCD Screen</span>
+                <span>âœ“ Mini Fridge</span>
+              </div>
+              <div class="vehicle-footer">
+                <div class="vehicle-price">
+                  <small>Starting from</small>
+                  <strong>â‚¹25/km</strong>
+                </div>
+                <button class="btn-enquiry" onclick="openEnquiry('Luxury Tempo Traveller 12S')">
+                  <i class="fab fa-whatsapp"></i> Enquire
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- â”€â”€â”€ 17 SEATER CATEGORY â”€â”€â”€ -->
+      <div class="category-block" id="cat-17">
+        <div class="category-header">
+          <div class="category-icon"><i class="fas fa-bus"></i></div>
+          <div>
+            <h2>17 Seater Vehicles</h2>
+            <p>Best for office outings & large friend groups</p>
+          </div>
+          <span class="seat-badge">17 Seats</span>
+        </div>
+        <div class="vehicles-grid">
+
+          <div class="vehicle-card" data-seats="17">
+            <div class="vehicle-image">
+              <img src="https://truckcdn.cardekho.com/in/force/traveller-monobus/force-traveller-monobus.jpg" alt="Tempo Traveller 17 Seater" />
+              <div class="vehicle-type-badge">Tempo Traveller</div>
+              <div class="vehicle-seats-badge"><i class="fas fa-user-friends"></i> 17</div>
+            </div>
+            <div class="vehicle-info">
+              <h3>Force Tempo Traveller 17S</h3>
+              <div class="vehicle-specs">
+                <span><i class="fas fa-gas-pump"></i> Diesel</span>
+                <span><i class="fas fa-cog"></i> Manual</span>
+                <span><i class="fas fa-snowflake"></i> AC</span>
+              </div>
+              <div class="vehicle-features">
+                <span>âœ“ Pushback Seats</span>
+                <span>âœ“ LED Lights</span>
+                <span>âœ“ Luggage Space</span>
+              </div>
+              <div class="vehicle-footer">
+                <div class="vehicle-price">
+                  <small>Starting from</small>
+                  <strong>â‚¹22/km</strong>
+                </div>
+                <button class="btn-enquiry" onclick="openEnquiry('Tempo Traveller 17 Seater')">
+                  <i class="fab fa-whatsapp"></i> Enquire
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="vehicle-card" data-seats="17">
+            <div class="vehicle-image">
+              <img src="https://truckcdn.cardekho.com/in/force/traveller-monobus/force-traveller-monobus.jpg" alt="Luxury 17 Seater" />
+              <div class="vehicle-type-badge">Luxury</div>
+              <div class="vehicle-seats-badge"><i class="fas fa-user-friends"></i> 17</div>
+            </div>
+            <div class="vehicle-info">
+              <h3>Maharaja Tempo Traveller 17S</h3>
+              <div class="vehicle-specs">
+                <span><i class="fas fa-gas-pump"></i> Diesel</span>
+                <span><i class="fas fa-cog"></i> Manual</span>
+                <span><i class="fas fa-snowflake"></i> AC</span>
+              </div>
+              <div class="vehicle-features">
+                <span>âœ“ Maharaja Recliner</span>
+                <span>âœ“ Entertainment System</span>
+                <span>âœ“ Premium Interior</span>
+              </div>
+              <div class="vehicle-footer">
+                <div class="vehicle-price">
+                  <small>Starting from</small>
+                  <strong>â‚¹28/km</strong>
+                </div>
+                <button class="btn-enquiry" onclick="openEnquiry('Maharaja Tempo Traveller 17S')">
+                  <i class="fab fa-whatsapp"></i> Enquire
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- â”€â”€â”€ 20+ SEATER CATEGORY â”€â”€â”€ -->
+      <div class="category-block" id="cat-20">
+        <div class="category-header">
+          <div class="category-icon"><i class="fas fa-bus"></i></div>
+          <div>
+            <h2>20-26 Seater Vehicles</h2>
+            <p>Ideal for large group tours & corporate events</p>
+          </div>
+          <span class="seat-badge">20-26 Seats</span>
+        </div>
+        <div class="vehicles-grid">
+
+          <div class="vehicle-card" data-seats="20">
+            <div class="vehicle-image">
+              <img src="https://truckcdn.cardekho.com/in/force/urbania/force-urbania-75896.jpg" alt="20 Seater Mini Bus" />
+              <div class="vehicle-type-badge">Mini Bus</div>
+              <div class="vehicle-seats-badge"><i class="fas fa-user-friends"></i> 20</div>
+            </div>
+            <div class="vehicle-info">
+              <h3>AC Mini Bus 20 Seater</h3>
+              <div class="vehicle-specs">
+                <span><i class="fas fa-gas-pump"></i> Diesel</span>
+                <span><i class="fas fa-cog"></i> Manual</span>
+                <span><i class="fas fa-snowflake"></i> AC</span>
+              </div>
+              <div class="vehicle-features">
+                <span>âœ“ Pushback Seats</span>
+                <span>âœ“ Mic System</span>
+                <span>âœ“ Large Boot</span>
+              </div>
+              <div class="vehicle-footer">
+                <div class="vehicle-price">
+                  <small>Starting from</small>
+                  <strong>â‚¹30/km</strong>
+                </div>
+                <button class="btn-enquiry" onclick="openEnquiry('Mini Bus 20 Seater')">
+                  <i class="fab fa-whatsapp"></i> Enquire
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="vehicle-card" data-seats="20">
+            <div class="vehicle-image">
+              <img src="https://truckcdn.cardekho.com/in/ashok-leyland/lynx-smart/ashok-leyland-lynx-smart.jpg" alt="26 Seater Mini Bus" />
+              <div class="vehicle-type-badge">Mini Bus</div>
+              <div class="vehicle-seats-badge"><i class="fas fa-user-friends"></i> 26</div>
+            </div>
+            <div class="vehicle-info">
+              <h3>AC Mini Bus 26 Seater</h3>
+              <div class="vehicle-specs">
+                <span><i class="fas fa-gas-pump"></i> Diesel</span>
+                <span><i class="fas fa-cog"></i> Manual</span>
+                <span><i class="fas fa-snowflake"></i> AC</span>
+              </div>
+              <div class="vehicle-features">
+                <span>âœ“ Comfortable Seats</span>
+                <span>âœ“ Entertainment</span>
+                <span>âœ“ Luggage Hold</span>
+              </div>
+              <div class="vehicle-footer">
+                <div class="vehicle-price">
+                  <small>Starting from</small>
+                  <strong>â‚¹32/km</strong>
+                </div>
+                <button class="btn-enquiry" onclick="openEnquiry('Mini Bus 26 Seater')">
+                  <i class="fab fa-whatsapp"></i> Enquire
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- â”€â”€â”€ 35+ SEATER CATEGORY â”€â”€â”€ -->
+      <div class="category-block" id="cat-35">
+        <div class="category-header">
+          <div class="category-icon"><i class="fas fa-bus-alt"></i></div>
+          <div>
+            <h2>35-52 Seater Luxury Buses</h2>
+            <p>For weddings, pilgrimages & large corporate groups</p>
+          </div>
+          <span class="seat-badge">35-52 Seats</span>
+        </div>
+        <div class="vehicles-grid">
+
+          <div class="vehicle-card" data-seats="35">
+            <div class="vehicle-image">
+              <img src="https://truckcdn.cardekho.com/in/ashok-leyland/lynx-smart/ashok-leyland-lynx-smart.jpg" alt="35 Seater Bus" />
+              <div class="vehicle-type-badge">AC Bus</div>
+              <div class="vehicle-seats-badge"><i class="fas fa-user-friends"></i> 35</div>
+            </div>
+            <div class="vehicle-info">
+              <h3>AC Luxury Bus 35 Seater</h3>
+              <div class="vehicle-specs">
+                <span><i class="fas fa-gas-pump"></i> Diesel</span>
+                <span><i class="fas fa-cog"></i> Manual</span>
+                <span><i class="fas fa-snowflake"></i> AC</span>
+              </div>
+              <div class="vehicle-features">
+                <span>âœ“ Pushback Seats</span>
+                <span>âœ“ LED TV</span>
+                <span>âœ“ Mic & Music</span>
+              </div>
+              <div class="vehicle-footer">
+                <div class="vehicle-price">
+                  <small>Starting from</small>
+                  <strong>â‚¹40/km</strong>
+                </div>
+                <button class="btn-enquiry" onclick="openEnquiry('Luxury Bus 35 Seater')">
+                  <i class="fab fa-whatsapp"></i> Enquire
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="vehicle-card" data-seats="35">
+            <div class="vehicle-image">
+              <img src="https://truckcdn.cardekho.com/in/volvo/9400-b11r/volvo-9400-b11r.jpg" alt="45 Seater Volvo Bus" />
+              <div class="vehicle-type-badge">Volvo</div>
+              <div class="vehicle-seats-badge"><i class="fas fa-user-friends"></i> 45</div>
+            </div>
+            <div class="vehicle-info">
+              <h3>Volvo Bus 45 Seater</h3>
+              <div class="vehicle-specs">
+                <span><i class="fas fa-gas-pump"></i> Diesel</span>
+                <span><i class="fas fa-cog"></i> Automatic</span>
+                <span><i class="fas fa-snowflake"></i> AC</span>
+              </div>
+              <div class="vehicle-features">
+                <span>âœ“ Semi-Sleeper</span>
+                <span>âœ“ Charging Points</span>
+                <span>âœ“ Curtains & Blanket</span>
+              </div>
+              <div class="vehicle-footer">
+                <div class="vehicle-price">
+                  <small>Starting from</small>
+                  <strong>â‚¹55/km</strong>
+                </div>
+                <button class="btn-enquiry" onclick="openEnquiry('Volvo Bus 45 Seater')">
+                  <i class="fab fa-whatsapp"></i> Enquire
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="vehicle-card" data-seats="35">
+            <div class="vehicle-image">
+              <img src="https://truckcdn.cardekho.com/in/ashok-leyland/lynx-smart/ashok-leyland-lynx-smart.jpg" alt="52 Seater Bus" />
+              <div class="vehicle-type-badge">AC Bus</div>
+              <div class="vehicle-seats-badge"><i class="fas fa-user-friends"></i> 52</div>
+            </div>
+            <div class="vehicle-info">
+              <h3>AC Bus 52 Seater</h3>
+              <div class="vehicle-specs">
+                <span><i class="fas fa-gas-pump"></i> Diesel</span>
+                <span><i class="fas fa-cog"></i> Manual</span>
+                <span><i class="fas fa-snowflake"></i> AC</span>
+              </div>
+              <div class="vehicle-features">
+                <span>âœ“ 2x2 Seating</span>
+                <span>âœ“ Large Luggage</span>
+                <span>âœ“ Emergency Exit</span>
+              </div>
+              <div class="vehicle-footer">
+                <div class="vehicle-price">
+                  <small>Starting from</small>
+                  <strong>â‚¹45/km</strong>
+                </div>
+                <button class="btn-enquiry" onclick="openEnquiry('AC Bus 52 Seater')">
+                  <i class="fab fa-whatsapp"></i> Enquire
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== CTA BANNER ========== -->
+  <section class="fleet-cta">
+    <div class="fleet-cta-bg" style="background-image: url('https://images.unsplash.com/photo-1449965408869-ebd3fee6d445?w=1920&q=80')"></div>
+    <div class="fleet-cta-overlay"></div>
+    <div class="container fleet-cta-content">
+      <h2>Can't Find Your Vehicle?</h2>
+      <p>We have 200+ vehicles in our fleet. Tell us your requirement and we'll find the perfect match!</p>
+      <div class="contact-actions">
+        <a href="tel:+918600313495" class="btn-primary"><i class="fas fa-phone-alt"></i> Call Now</a>
+        <a href="https://wa.me/918600313495?text=Hi%20I%20need%20a%20vehicle%20for%20my%20trip" class="btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-speak">
+      <div class="container">
+        <div class="speak-row">
+          <a href="#"><i class="fas fa-map-marker-alt"></i> Find Us</a>
+          <div class="speak-center">
+            <i class="fas fa-headset"></i>
+            <span>Speak to our expert at <a href="tel:+918600313495">+91 8600313495</a></span>
+          </div>
+          <div class="follow-us">
+            <span>Follow Us</span>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/918600313495" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <img src="assets/logo.jpg" alt="Unique Travel Agency" class="site-logo" />
+            </div>
+            <p>Crafting unforgettable travel experiences since 2018. Your trusted partner for group tours and adventure travel across India and the world.</p>
+            <div class="footer-contact">
+              <p><i class="fas fa-map-marker-alt"></i> Mahesh Reddy, Pune,<br>&nbsp;&nbsp;&nbsp;&nbsp; Maharashtra - 411001, INDIA</p>
+              <p><i class="fas fa-envelope"></i> hello@unique.com</p>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="index.html#about">About Us</a></li>
+              <li><a href="index.html#contact">Contact Us</a></li>
+              <li><a href="vehicles.html">Our Fleet</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Cancellation Terms</a></li>
+              <li><a href="#">Disclaimer</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="footer-newsletter">
+            <h4>Newsletter</h4>
+            <p>Subscribe to get exclusive deals and travel tips</p>
+            <form class="newsletter-form" id="newsletterForm">
+              <input type="email" placeholder="Your email address" required />
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>Website built with â¤ï¸ by Unique | Â© 2026 All rights reserved by Unique OPC Pvt. Ltd.</p>
+          <div class="payment-icons">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/200px-Visa_Inc._logo.svg.png" alt="Visa" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/200px-Mastercard-logo.svg.png" alt="Mastercard" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/200px-PayPal.svg.png" alt="PayPal" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== FLOATING WHATSAPP ========== -->
+  <a href="https://wa.me/918600313495" class="whatsapp-float" target="_blank" id="whatsappFloat">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Chat with us!</span>
+  </a>
+
+  <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script>
+    // â”€â”€ HEADER SCROLL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    window.addEventListener('scroll', () => {
+      document.getElementById('scrollTop').classList.toggle('visible', window.scrollY > 300);
+    }, { passive: true });
+
+    // â”€â”€ HAMBURGER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    document.getElementById('hamburger').addEventListener('click', () => {
+      document.getElementById('navMenu').classList.toggle('open');
+    });
+
+    // Mobile dropdown toggles
+    document.querySelectorAll('.nav-item.has-dropdown .nav-link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          link.parentElement.classList.toggle('open');
+        }
+      });
+    });
+
+    // â”€â”€ FILTER TABS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    const tabs = document.querySelectorAll('.filter-tab');
+    const categories = document.querySelectorAll('.category-block');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        const filter = tab.dataset.filter;
+
+        categories.forEach(cat => {
+          if (filter === 'all') {
+            cat.style.display = 'block';
+            cat.style.animation = 'fadeInUp 0.5s ease forwards';
+          } else {
+            const catId = cat.id.replace('cat-', '');
+            if (catId === filter) {
+              cat.style.display = 'block';
+              cat.style.animation = 'fadeInUp 0.5s ease forwards';
+            } else {
+              cat.style.display = 'none';
+            }
+          }
+        });
+      });
+    });
+
+    // â”€â”€ SCROLL ANIMATION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.vehicle-card').forEach((el, i) => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(30px)';
+      el.style.transition = `opacity 0.5s ease ${i * 0.08}s, transform 0.5s ease ${i * 0.08}s`;
+      observer.observe(el);
+    });
+
+    // â”€â”€ WHATSAPP ENQUIRY â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    function openEnquiry(vehicleName) {
+      const msg = encodeURIComponent(`Hi! I'm interested in booking the *${vehicleName}* for my trip. Please share availability and pricing.`);
+      window.open(`https://wa.me/918600313495?text=${msg}`, '_blank');
+    }
+
+    // â”€â”€ NEWSLETTER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    const nf = document.getElementById('newsletterForm');
+    if (nf) {
+      nf.addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('âœ… Subscribed successfully!');
+        nf.reset();
+      });
+    }
+
+    // â”€â”€ FADE IN ANIMATION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    `;
+    document.head.appendChild(style);
+  </script>
+</body>
+</html>
+
